@@ -10,6 +10,11 @@ app.use(bodyParser.json());
 
 
 //MARK : HTTP Get
+app.get('/', function (req, res) {
+
+  res.end("This api is not available")
+})
+
 app.get('/api/form1', function (req, res) {
    fs.readFile( __dirname + "/JSONs/" + "default-values-in-template.json", 'utf8', function (err, data) {
        console.log( data );
@@ -43,7 +48,7 @@ app.get('/api/form4', function (req, res) {
 
 var server = app.listen(8081, function () {
 
-  var host = "192.168.2.25"//server.address().address
+  var host = server.address().address
   var port = server.address().port
 
   console.log("Example app listening at http://%s:%s", host, port)
