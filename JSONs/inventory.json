@@ -1,0 +1,403 @@
+{
+  "groups": [
+    {
+      "id": "organisation-details",
+      "title": "Organisation Details",
+      "sections": [
+        {
+          "id": "personal-details-0",
+          "fields": [
+            {
+              "id": "company_name",
+              "title": "Company name",
+              "value": "Kovan labs.,",
+              "type": "text",
+              "disabled": true,
+              "size": {
+                "width": 40,
+                "height": 1
+              },
+              "validations": {
+                "required": true,
+                "min_length": 4
+              }
+            },
+            {
+              "id": "website",
+              "title": "Website",
+              "value": "www.kovan.com",
+              "type": "text",
+              "disabled": true,
+              "size": {
+                "width": 40,
+                "height": 1
+              },
+              "validations": {
+                "required": false,
+                "min_length": 4
+              }
+            },
+            {
+            "id": "active",
+            "title": "Active",
+            "type": "segment",
+            "values":[
+              {
+                "id":"active_yes",
+                "title":"Yes",
+                "default":true
+              },
+              {
+                "id":"active_no",
+                "title":"No"
+              }
+            ],
+            "size": {
+              "width": 20,
+              "height": 1
+            }
+          },
+            {
+              "id": "billing_address",
+              "title": "Billing Address",
+              "placeholder": "123, Any street..",
+              "type": "text",
+              "disabled": false,
+              "size": {
+                "width": 40,
+                "height": 1
+              },
+              "validations": {
+                "required": true,
+                "min_length": 4
+              }
+            },
+            {
+              "id": "billing_city",
+              "type": "name",
+              "placeholder": "city name",
+              "size": {
+                "width": 20,
+                "height": 1
+              },
+              "validations": {
+                "required": true,
+                "min_length": 5
+              }
+            },
+            {
+              "id": "billing_state",
+              "type": "name",
+              "placeholder": "State name",
+              "size": {
+                "width": 20,
+                "height": 1
+              },
+              "validations": {
+                "required": true,
+                "min_length": 5
+              }
+            },
+            {
+              "id": "billing_zip",
+              "placeholder": "ZIP Code",
+              "type": "number",
+              "input_type": "number",
+              "size": {
+                "width": 20,
+                "height": 1
+              }
+            },
+            {
+              "id": "primary_number",
+              "title": "Primary Number",
+              "placeholder": "+91 1234 567 890",
+              "type": "number",
+              "size": {
+                "width": 40,
+                "height": 1
+              },
+              "validations": {
+                "required": true,
+                "min_length": 10
+              }
+            },
+            {
+              "id": "secondary_number",
+              "title": "Secondary Number",
+              "placeholder": "+91 1234 567 890",
+              "type": "number",
+              "size": {
+                "width": 40,
+                "height": 1
+              },
+              "validations": {
+                "required": true,
+                "min_length": 10
+              },
+            }
+          ]
+        },
+        {
+          "id": "personal-details-1",
+          "fields": [
+            {
+              "id": "shipping_address",
+              "title": "Shipping Address",
+              "placeholder": "123, Any street..",
+              "type": "text",
+              "disabled": false,
+              "size": {
+                "width": 40,
+                "height": 1
+              },
+              "validations": {
+                "required": true,
+                "min_length": 4
+              }
+            },
+            {
+              "id": "shipping_city",
+              "type": "name",
+              "placeholder": "city name",
+              "size": {
+                "width": 20,
+                "height": 1
+              },
+              "validations": {
+                "required": true,
+                "min_length": 5
+              }
+            },
+            {
+              "id": "shipping_state",
+              "type": "name",
+              "placeholder": "State name",
+              "size": {
+                "width": 20,
+                "height": 1
+              }
+            },
+            {
+              "id": "shipping_zip",
+              "placeholder": "ZIP Code",
+              "type": "number",
+              "input_type": "number",
+              "size": {
+                "width": 20,
+                "height": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inventory_details",
+      "title": "Inventory Details",
+      "sections": [
+        {
+          "id": "inventory-0",
+          "fields": [
+            {
+              "id": "sales_person",
+              "title": "Salesperson",
+              "type": "select",
+              "size": {
+                "width": 50,
+                "height": 1
+              },
+              "values": [
+                {
+                  "title": "Vinoth",
+                  "id": 0,
+                  "value": "Vinoth",
+                },
+                {
+                  "title": "Rahul",
+                  "id": 1,
+                  "value": "Rahul",
+                },
+                {
+                  "title": "Dinesh",
+                  "id": 2,
+                  "value": "Dinesh",
+                },
+                {
+                  "title": "Naveen",
+                  "id": 2,
+                  "value": "Naveen",
+                }
+              ]
+            },
+            {
+              "id": "account_manager",
+              "title": "Account Manager",
+              "type": "select",
+              "size": {
+                "width": 50,
+                "height": 1
+              },
+              "values": [
+                {
+                  "title": "Barry",
+                  "id": 0,
+                  "value": "Barry",
+                },
+                {
+                  "title": "Allen",
+                  "id": 1,
+                  "value": "Allen",
+                },
+                {
+                  "title": "Will",
+                  "id": 2,
+                  "value": "Will",
+                },
+                {
+                  "title": "Smith",
+                  "id": 2,
+                  "value": "Smith",
+                }
+              ]
+            },
+            {
+              "id": "customer_relation",
+              "title": "Customer Relation",
+              "type": "select",
+              "size": {
+                "width": 40,
+                "height": 1
+              },
+              "values": [
+                {
+                  "title": "End-User",
+                  "id": 0,
+                  "value": "End-User",
+                },
+                {
+                  "title": "Developer",
+                  "id": 1,
+                  "value": "Developer",
+                },
+                {
+                  "title": "Manager",
+                  "id": 2,
+                  "value": "Manager",
+                }
+              ]
+            },
+            {
+              "id": "order_date",
+              "title": "Order date",
+              "type": "date",
+              "size": {
+                "width": 30,
+                "height": 1
+              }
+            },
+            {
+              "id": "rate_code",
+              "title": "Rate code",
+              "type": "select",
+              "size": {
+                "width": 30,
+                "height": 1
+              },
+              "values": [
+                {
+                  "title": "A",
+                  "id": 0,
+                  "value": "A",
+                },
+                {
+                  "title": "B",
+                  "id": 1,
+                  "value": "B",
+                },
+                {
+                  "title": "C",
+                  "id": 2,
+                  "value": "C",
+                }
+              ]
+            },
+            {
+              "id": "delivery_date",
+              "title": "Delivery date",
+              "type": "date",
+              "validations": {
+                "compare_to": "order_date",
+                "compare_rule": ">"
+              },
+              "size": {
+                "width": 25,
+                "height": 1
+              }
+            },
+            {
+              "id": "contract_type",
+              "title": "Contract type",
+              "info": "Type of contract",
+              "type": "select",
+              "size": {
+                "width": 50,
+                "height": 1
+              },
+              "values": [
+                {
+                  "id": 0,
+                  "title": "Permanent",
+                  "info": "Regular employee",
+                  "default": true,
+                  "targets": [
+                    {
+                      "id": "end_date",
+                      "type": "field",
+                      "action": "show"
+                    },
+                    {
+                      "id": "employment-1",
+                      "type": "section",
+                      "action": "show"
+                    }
+                  ]
+                },
+                {
+                  "id": 1,
+                  "title": "Temporary",
+                  "targets": [
+                    {
+                      "id": "end_date",
+                      "type": "field",
+                      "action": "hide"
+                    },
+                    {
+                      "id": "employment-1",
+                      "type": "section",
+                      "action": "hide"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "employment-1",
+          "fields": [
+            {
+              "id": "signature",
+              "title": "Signature",
+              "type": "button",
+              "size": {
+                "width": 100,
+                "height": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
