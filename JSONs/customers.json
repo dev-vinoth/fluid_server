@@ -10,8 +10,8 @@
             {
               "id": "first_name",
               "title": "First name",
-              "info": "Enter your First Name",
               "type": "name",
+              "placeholder": "Enter your name",
               "disabled": false,
               "size": {
                 "width": 30,
@@ -26,13 +26,13 @@
               "id": "last_name",
               "title": "Last name",
               "type": "name",
-              "info": "Obs! Husk å kjøpe melk",
+              "disabled": false,
+              "accessibility_label": "First Name Accessibility Label",
               "size": {
                 "width": 30,
                 "height": 1
               },
               "validations": {
-                "required": true,
                 "min_length": 2
               }
             },
@@ -46,10 +46,10 @@
                 "height": 1
               },
               "validations": {
-                "required": false,
-                "min_length": 10
+                "required": true,
+                "min_length": 10,
+                "max_length": 10
               },
-              "formula": "first_name last_name"
             }
           ]
         },
@@ -84,9 +84,15 @@
               "title": "ZIP Code",
               "type": "number",
               "input_type": "number",
+              "placeholder": "641014",
               "size": {
                 "width": 25,
                 "height": 1
+              },
+              "validations": {
+                "required": true,
+                "min_length": 6,
+                "max_length": 6
               }
             }
           ]
@@ -273,6 +279,15 @@
             {
               "id": "signature",
               "title": "Signature",
+              "type": "button",
+              "size": {
+                "width": 100,
+                "height": 1
+              }
+            },
+            {
+              "id": "send",
+              "title": "Send",
               "type": "button",
               "size": {
                 "width": 100,
