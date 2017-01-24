@@ -22,8 +22,8 @@ app.get('/api/jobs', function (req, res) {
    });
 })
 
-app.get('/api/customers', function (req, res) {
-   fs.readFile( __dirname + "/JSONs/" + "customers.json", 'utf8', function (err, data) {
+app.get('/api/employee', function (req, res) {
+   fs.readFile( __dirname + "/JSONs/" + "employee.json", 'utf8', function (err, data) {
        console.log( data );
        res.end( data );
    });

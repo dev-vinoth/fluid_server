@@ -141,6 +141,7 @@
                 {
                   "id": 0,
                   "title": "Permanent",
+                  "value": "permanent",
                   "info": "Regular employee",
                   "default": true,
                   "targets": [
@@ -159,6 +160,7 @@
                 {
                   "id": 1,
                   "title": "Temporary",
+                  "value": "temporary",
                   "targets": [
                     {
                       "id": "end_date",
@@ -227,25 +229,6 @@
               ]
             },
             {
-              "id": "bonus_enabled",
-              "title": "Bonus enabled",
-              "type": "select",
-              "size": {
-                "width": 25,
-                "height": 1
-              },
-              "values": [
-                {
-                  "id": true,
-                  "title": "True"
-                },
-                {
-                  "id": false,
-                  "title": "False"
-                }
-              ]
-            },
-            {
               "id": "bonus",
               "title": "Bonus",
               "type": "float",
@@ -279,15 +262,6 @@
             {
               "id": "signature",
               "title": "Signature",
-              "type": "button",
-              "size": {
-                "width": 100,
-                "height": 1
-              }
-            },
-            {
-              "id": "send",
-              "title": "Send",
               "type": "button",
               "size": {
                 "width": 100,
